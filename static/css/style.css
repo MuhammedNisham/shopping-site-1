@@ -6,12 +6,38 @@
 body{
     /* styling for site header */
     header#site-header{
-        height: 30px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        border: 1px solid;
+        border-color: rgb(24, 29, 31) ;
+        border-radius: 10px;
         div.site-logo{
             height: 100%;
             img{
+                
                 height: 100%;
+                margin-left: 10px;
+                padding: px;
+
             }
+        }
+        h2{
+            color: rgb(24, 68, 85)
+            
+        }
+        nav{
+            margin-right: 10px;
+            /* display: flex; */
+
+            a{
+                margin: 2px;
+                color:rgb(24, 68, 85);
+            }
+
+           
         }
     }
 }
