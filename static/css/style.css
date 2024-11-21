@@ -11,9 +11,10 @@ body{
         justify-content: space-between;
         align-items: center;
 
-        border: 1px solid;
-        border-color: rgb(24, 29, 31) ;
+        /* border: 1px solid; */
+        /* border-color: rgb(24, 29, 31) ; */
         border-radius: 10px;
+        background-color: black;
         div.site-logo{
             height: 100%;
             img{
@@ -25,16 +26,31 @@ body{
             }
         }
         h2{
-            color: rgb(24, 68, 85)
-            
+            color: rgb(120, 129, 131)
         }
         nav{
             margin-right: 10px;
-            /* display: flex; */
-
+            height: 100%;
+            border: 1px solid;
+            display: flex;
+            align-items: center;
+            padding: 0;
+         
             a{
-                margin: 2px;
-                color:rgb(24, 68, 85);
+                display: flex;
+                align-items: center;
+                font-size: large;
+                padding: 2px;
+                margin: 1px;
+                height: 100%;
+                color:rgb(118, 140, 146);
+                border-radius: 10px;
+                transition-duration: 1s;
+            }
+            a:hover{
+                background-color: rgb(118, 140, 146);
+                color: brown;
+                transition-duration: 0.5s;
             }
 
            
