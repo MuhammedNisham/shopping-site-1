@@ -6,6 +6,7 @@
 }
 
 body{
+    background-color: rgba(38, 151, 104, 0.329);
     /* styling for site header */
     header#site-header{
         height: 40px;
