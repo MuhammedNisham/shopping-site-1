@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(148, 193, 231, 0.603);
+            header#site-header{
+                background-color: black;
+                color: aliceblue;
+                height: 40px;
+                font-size: large;
+                text-align: center;
+                /* giving postion */
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 10;
+            }
+            main{
+                background-color: aliceblue;
+                margin-top: 50px;
+                margin-bottom: 50px;
+
+            }
+            footer#site-footer{
+                background-color: black;
+                color: aliceblue;
+                height: 40px;
+                font-size: large;
+                text-align: center;
+                /* giving postion */
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                z-index: 10;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="site-header">
+        This is my header
+    </header>
+    <main>
+        <section id="absolute">
+            <div class="parent">
+                <div class="child">
+                    A
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="site-footer">
+        this is my footer
+    </footer>
+</body>
+</html>
