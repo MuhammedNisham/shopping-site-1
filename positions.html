@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: rgba(148, 193, 231, 0.603);
-            header#site-header{
+        body {
+            background-color: rgba(89, 135, 172, 0.603);
+
+            header#site-header {
                 background-color: black;
                 color: aliceblue;
                 height: 40px;
@@ -19,12 +21,62 @@
                 top: 0;
                 z-index: 10;
             }
-            main{
-               margin-top: 50px;
-               margin-bottom: 50px;
 
+            main {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                .dummy{
+                    div{
+                        width: 300px;
+                        height: 400px;
+                        background-color: black;
+                        margin: auto;
+                    }
+                }
+
+                section#a1 {
+
+                    div.parent {
+                        border: 1px solid;
+                        height: 200px;
+                        width: 400px;
+                        margin: auto;
+                        position: relative;
+
+                        div.child {
+                            border: 1px solid rgb(173, 83, 83);
+                            background-color: rgb(63, 63, 109);
+                            height: 50%;
+                            aspect-ratio: 1/1;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            border-radius: 50%;
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                        }
+                        div.sticky{
+                            height: 50%;
+                            aspect-ratio: 1/1;
+                            background-color: rgb(54, 196, 148);
+                            position: sticky;
+                            top: 200px;
+                            
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                
             }
-            footer#site-footer{
+            
+
+            footer#site-footer {
                 background-color: black;
                 color: aliceblue;
                 height: 40px;
@@ -39,17 +91,35 @@
         }
     </style>
 </head>
+
 <body>
 
     <header id="site-header">
         This is my header
     </header>
     <main>
-        <section id="absolute">
+        <section class="dummy">
+            <div>
+
+            </div>
+        </section>
+        <section id="a1">
             <div class="parent">
                 <div class="child">
-                    A
+                    <p>
+                        A
+                    </p>
                 </div>
+                <div class="sticky">
+                    <p>
+                        S
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="dummy">
+            <div>
+
             </div>
         </section>
     </main>
@@ -57,4 +127,5 @@
         this is my footer
     </footer>
 </body>
+
 </html>
