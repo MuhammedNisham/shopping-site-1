@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kerala Cart</title>
+    <title>Login | Kerala Cart</title>
     <link rel="shortcut icon" href="static/images/icons/shopping.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/css/style1.css">
 </head>
@@ -25,21 +25,20 @@
         </form> -->
         <nav>
             <a href="index.html">Home</a>
-            <a href="login.html">Login</a>
             <a href="">Sign up</a>
-            <a href="about.html">About</a>
         </nav>
     </header>
     <!-- site header ends -->
     <main>
-        <section id="products">
+        <section id="products" class="blur">
 
             <div class="container">
 
                 <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
-                        <a href="https://www.samsung.com/in/smartphones/galaxy-s24/"><img src="media/products/s24.jpg.jpg" alt=""></a> 
+                        <a href="https://www.samsung.com/in/smartphones/galaxy-s24/"><img
+                                src="media/products/s24.jpg.jpg" alt=""></a>
                     </div>
                     <div class="card-body">
                         <div class="card-text">
@@ -56,7 +55,7 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                                 <!-- a single product card -->
+                <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
                         <img src="media/products/s24.jpg.jpg" alt="">
@@ -70,33 +69,13 @@
                                 Rs. 40000
                             </span> <br>
                             <button>
-                                <a href="cart.html">ADD to cart</a>
+                                ADD to cart
                             </button>
                         </div>
                     </div>
                 </div>
                 <!-- product card ends -->
 
-                                <!-- a single product card -->
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="media/products/s24.jpg.jpg" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-text">
-                                            <h3>
-                                                Samsung S24
-                                            </h3>
-                                            <span>
-                                                Rs. 40000
-                                            </span> <br>
-                                            <button>
-                                                ADD to cart
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product card ends -->
                 <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
@@ -257,19 +236,51 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                
+                <!-- a single product card -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="media/products/s24.jpg.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h3>
+                                Samsung S24
+                            </h3>
+                            <span>
+                                Rs. 40000
+                            </span> <br>
+                            <button>
+                                ADD to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- product card ends -->
+
 
             </div>
 
-
-
-
-
+        </section>
+        <section id="login">
+            <div>
+                <form action="" method="post" class="login-form">
+                    <header>
+                        <h1>Login</h1>
+                    </header>
+                    <div>
+                        <label for="username-input" class="hide">Username:</label>
+                        <input type="text" name="" placeholder="Enter your username" id="username-input" required>
+                    </div>
+                    <div>
+                        <label for="pwd-input" class="hide">Password</label>
+                        <input type="password" id="pwd-input" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer id="site-footer">
-        footer
-    </footer>
+    <footer></footer>
 </body>
 
 </html>
