@@ -1,17 +1,19 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body{
+body {
     .hide {
         display: none;
     }
+
     background-color: rgba(38, 151, 104, 0.329);
+
     /* styling for site header */
-    header#site-header{
+    header#site-header {
         height: 40px;
         display: flex;
         justify-content: space-between;
@@ -26,209 +28,247 @@ body{
         /* border-color: rgb(24, 29, 31) ; */
         border-radius: 10px;
         background-color: rgb(74, 107, 95);
-        div.site-logo{
+
+        div.site-logo {
             height: 100%;
-            img{
-                
+
+            img {
+
                 height: 100%;
                 margin-left: 10px;
                 padding: px;
 
             }
         }
-        h2{
+
+        h2 {
             /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
             color: rgb(43, 60, 75)
-            
         }
-        nav{
+
+        nav {
             margin-right: 10px;
             height: 100%;
             /* border: 1px solid; */
             display: flex;
             align-items: center;
             padding: 0;
-         
-            a{
+
+            a {
                 display: flex;
                 align-items: center;
                 font-size: large;
                 padding: 2px;
                 margin: 1px;
                 height: 100%;
-                color:rgb(43, 60, 75);
+                color: rgb(43, 60, 75);
                 border-radius: 10px;
                 transition-duration: 1s;
-               font-style: italic;
+                font-style: italic;
             }
-            a:hover{
+
+            a:hover {
                 background-color: rgba(49, 46, 46, 0.411);
                 color: rgb(238, 219, 219);
                 transition-duration: 0.5s;
             }
 
-           
-        }
-        /* form.search{ */
 
         }
-        footer#site-footer{
-            background-color: black;
+
+        /* form.search{ */
+
+    }
+
+    footer#site-footer {
+        background-color: black;
+    }
+}
+
+main {
+    section#login {
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition-duration: 0.5s;
+
+        div {
+            height: 200px;
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+
+            form.login-form {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(74, 107, 95);
+
+
+                header {
+                    height: 50px;
+                    background-color: rgb(47, 65, 58);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    h1 {
+                        font-size: 25px;
+                        height: auto;
+                    }
+
+                }
+
+                div {
+                    height: 30px;
+                    width: 80%;
+                    border: 1px solid;
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+
+                        font-size: medium;
+                        border-radius: 10px;
+                        border: none;
+
+                    }
+
+                    input::placeholder {
+                        color: rgb(47, 65, 58);
+                        font-size: small;
+                    }
+
+                }
+
+                button {
+                    width: 40%;
+                    height: 30px;
+                    margin-bottom: 5px;
+                    border-radius: 10px;
+                    border: none;
+                    font-size: larger;
+                    color: rgb(20, 26, 24);
+                    background-color: rgb(47, 65, 58);
+                }
+
+                button:active {
+                    box-shadow: 1px 1px 1px 1px rgb(47, 65, 58);
+                }
+            }
         }
     }
 
-    main{
-        .blur{
-            filter: blur(5px);
-        }
-        section#products{
-            /* border: 1px solid; */
-            width: 90%;
-            margin: auto;
-            margin-top: 50px;
+    section#login:hover {
+        transform: translate(-50%, -50%) scale(1.2);
+        transition-duration: 2s;
+    }
+
+    .blur {
+        filter: blur(5px);
+    }
+
+    section#products {
+        /* border: 1px solid; */
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+
+        /* styling for cards */
+        .container {
+            width: 100%;
             display: flex;
-            /* styling for cards */
-            .container{
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                /* justify-content: center; */
-                div.card{
-                    height: 250px;
-                    width: 180px;
-                    margin: 5px;
+            flex-wrap: wrap;
+
+            /* justify-content: center; */
+            div.card {
+                height: 250px;
+                width: 180px;
+                margin: 5px;
+                /* border: 1px solid; */
+                box-shadow: 4px 4px 2px 1px rgba(23, 23, 24, 0.699);
+                border-radius: 5px;
+                overflow: hidden;
+
+                .card-img {
+                    height: 50%;
+
                     /* border: 1px solid; */
-                    box-shadow: 4px 4px 2px 1px rgba(23, 23, 24, 0.699);
-                    border-radius: 5px;
-                    overflow: hidden;
-                    .card-img{
-                        height: 50%;
-                        /* border: 1px solid; */
-                        img{
-                            height: 100%;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .card-body {
+                    height: auto;
+                    padding: 10px 10px 10px 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    div.card-text {
+                        width: 100%;
+                        height: 80px;
+
+                        h3,
+                        span {
                             width: 100%;
-                            object-fit: cover;
+                            color: rgb(43, 60, 75);
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+
+                        span {
+                            margin-top: 4px;
+                            font-size: 15px;
+                            padding: 2px;
+                            width: 100%;
+                            display: block;
                         }
                     }
-                    .card-body{
-                        height: auto;
-                        padding: 10px 10px 10px 10px ;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        div.card-text{
-                            width: 100%;
-                            height: 80px;
-                            h3,span{
-                                width: 100%;
-                                color: rgb(43, 60, 75);
-                                text-overflow: ellipsis;
-                                overflow: hidden;
-                                white-space: nowrap;
-                            }
-                            span{
-                                margin-top: 4px;
-                                font-size: 15px;
-                                padding: 2px;
-                                width: 100%;
-                                display: block;
-                            }
+
+                    button {
+                        background-color: rgb(43, 60, 75);
+                        color: beige;
+                        border: none;
+                        border-radius: 20px;
+                        padding: 6px;
+                        margin-top: 15px;
+                        margin-left: 22px;
+
+                        a {
+                            color: white;
+
                         }
-                        button{
-                            background-color: rgb(43, 60, 75);
-                            color: beige;
-                            border: none;
-                            border-radius: 20px;
-                            padding: 6px;
-                            margin-top: 15px;
-                            margin-left: 22px;
-                            a{
-                                color: white;
-                                
-                        }
-                        button:active{
+
+                        button:active {
                             background-color: rgba(0, 0, 0, 0.664);
                         }
 
-            }
-            
+                    }
+
                 }
-                div.card:hover{
+
+                div.card:hover {
                     box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.747);
                     /* transition-duration: 1s; */
-                    
+
                 }
             }
         }
-        section#login {
-            position: fixed;
-            z-index: 10;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            transition-duration: 0.5s ;
-            div{
-                height: 200px;
-                width: 300px;
-                background-color: white;
-                border-radius: 10px;
-                overflow: hidden;
-                form.login-form {
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: center;
-                    background-color: black;
-                    header {
-                        height: 50px;
-                        background-color: rgb(92, 179, 185);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-                        h1 {
-                            font-size: 25px;
-                            height: auto;
-                        }
-                    }
-                    div {
-                        height: 30px;
-                        width: 80%;
-                        border: 1px solid;
-                        input {
-                            width: 100%;
-                            height: 100%;
-                            text-align: center;
-                            
-                            font-size: medium;
-                            border-radius: 10px;
-                            border: none;
-                            
-                        }
-                        input::placeholder {
-                            color: rgb(85, 85, 85);
-                            font-size: small;
-                        }
-                        
-                    }
-                    button {
-                            width: 40%;
-                            height: 30px;
-                            margin-bottom: 5px;
-                            border-radius: 10px;
-                            border: none;
-                    }
-                    button:active {
-                        box-shadow: 1px 1px 1px 1px yellow;
-                    }
-                }
-            }
-        }
-        section#login:hover{
-            transform: translate(-50%,-50%) scale(1.2);
-            transition-duration: 2s;
-        }
+
+
+
     }
-    
-    }
+}
